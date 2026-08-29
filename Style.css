@@ -56,7 +56,7 @@
   background-color: #a3a95c;
   position: absolute;
   border-radius: 3px;
-  transition: width 0.7s ease;
+  transition: 0.7s;
 }
 
 .nav-links ul li a:hover::after {
@@ -163,9 +163,17 @@
 
 /* <!------hero-1-icons------> */
 
+.hero-1-icons {
+  display: flex;
+  margin-top: 80px;
+  gap: 60px;
+}
+
+/* <!-------hero-1-icons-img------> */
+
 .hero-1-icons img {
-  width: 550px;
-  margin-top: 30px;
+  width: 120px;
+  height: 50px;
 }
 
 /* <!------hero-1-img------> */
@@ -177,3 +185,185 @@
 .hero-1-img img {
   width: 100%;
 }
+
+/* ================================================
+MOBILE RESPONSIVNE
+================================================ */
+
+@media (max-width: 600px) {
+  /* <!------header-------> */
+
+  .header {
+    height: auto;
+    padding: 10px 12px;
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .nav-links {
+    order: 3;
+  }
+
+  .nav-links ul li a {
+    font-size: 12px;
+  }
+
+  .nav-icons a {
+    font-size: 12px;
+  }
+
+  /* <!-----hero-1-text------> */
+
+  .hero-1-content {
+    margin-left: 15px;
+  }
+  .hero-1-text h1 {
+    font-size: 42px;
+  }
+
+  .hero-1-text p {
+    font-size: 16px;
+  }
+
+  /* <!-------hero-1-btn------> */
+
+  .hero-1-btn {
+    display: flex;
+    gap: 10px;
+  }
+
+  .hero-1-btn button {
+    padding: 10px 15px;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+/* @media (max-width: 600px) { */
+/* ---------- HEADER ---------- */
+
+/* .header {
+    height: auto;
+    padding: 12px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nav-links ul {
+    padding: 0;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .nav-links ul li a {
+    font-size: 14px;
+  }
+
+  .nav-icons {
+    gap: 18px;
+  }
+
+  .nav-icons a i {
+    font-size: 17px;
+  } */
+
+/* ---------- HERO ---------- */
+
+/* .hero-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  } */
+
+/* ---------- HERO CONTENT ---------- */
+
+/* .hero-1-content {
+    width: 100%;
+    margin: 45px 0 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  } */
+
+/* ---------- HERO HEADING ---------- */
+
+/* .hero-1-text {
+    width: 100%;
+  }
+
+  .hero-1-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .hero-1-text p {
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+  } */
+
+/* ---------- BUTTONS ---------- */
+
+/* .hero-1-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .hero-1-btn button {
+    width: 145px;
+    padding: 11px 10px;
+    font-size: 13px;
+  } */
+
+/* ---------- FEATURE ICONS ---------- */
+
+/* .hero-1-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 45px;
+  }
+
+  .hero-1-icons img {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+  } */
+
+/* ---------- HERO IMAGE ---------- */
+/* 
+  .hero-1-img {
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  .hero-1-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+} */
