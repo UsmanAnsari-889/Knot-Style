@@ -764,19 +764,92 @@ MOBILE RESPONSIVNE-1
   height: auto;
   margin-top: 80px;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
-.hero-4-cont-5 {
+.hero-4-cont-1 p,
+.hero-4-cont-2 p,
+.hero-4-cont-3 p,
+.hero-4-cont-4 p,
+.hero-4-cont-5 p {
   display: flex;
-  flex-direction: column;
+  font-size: 14px;
 }
 
-.hero-4-cont-5 {
-  margin-left: 0;
+.hero-4-btn {
+  display: flex;
 }
 
+.hero-4-btn button {
+  border: 1px solid #2f2119;
+  background-color: #fcfaf7;
+  color: #2f2119;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.hero-4-btn button:hover {
+  background-color: #2f2119;
+  color: #fcfaf7;
+}
+
+.hero-4-cont-1 i,
+.hero-4-cont-2 i,
+.hero-4-cont-3 i,
+.hero-4-cont-4 i,
+.hero-4-cont-5 i {
+  display: flex;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #b05011;
+  cursor: pointer;
+}
+
+.hero-4-icon {
+  display: flex;
+}
+
+.hero-4-cont-1 img,
+.hero-4-cont-2 img,
+.hero-4-cont-3 img,
+.hero-4-cont-4 img,
 .hero-4-cont-5 img {
-  width: 170px;
-  height: 200px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 200px;
+  transition: 0.8s;
+}
+
+.hero-4-cont-1 img:hover {
+  box-shadow: 0 0 10px 2px #2f2119;
+  transform: scale(1.1);
+}
+.hero-4-cont-2 img:hover {
+  box-shadow: 0 0 10px 2px #2f2119;
+  transform: scale(1.1);
+}
+.hero-4-cont-3 img:hover {
+  box-shadow: 0 0 10px 2px #2f2119;
+  transform: scale(1.1);
+}
+.hero-4-cont-4 img:hover {
+  box-shadow: 0 0 10px 2px #2f2119;
+  transform: scale(1.1);
+}
+.hero-4-cont-5 img:hover {
+  box-shadow: 0 0 10px 2px #2f2119;
+  transform: scale(1.01);
+}
+.hero-4-cont-5 img {
+  height: 240px;
+  transition: 0.8s;
+}
+
+.hero-4-cont-5 img:hover {
+  transform: scale(1.1);
+}
+
+.hero-4-cont-3 img {
+  height: 240px;
 }
