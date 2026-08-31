@@ -754,3 +754,29 @@ MOBILE RESPONSIVNE-1
     opacity: 1;
   }
 }
+
+/* <!-------hero-4-content---------> */
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-4-cont-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-4-cont-5 {
+  margin-left: 0;
+}
+
+.hero-4-cont-5 img {
+  width: 170px;
+  height: 200px;
+}
