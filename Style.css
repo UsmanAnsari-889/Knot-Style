@@ -764,20 +764,30 @@ MOBILE RESPONSIVNE-1
   height: auto;
   margin-top: 80px;
   justify-content: center;
-  gap: 25px;
+  gap: 10px;
 }
 
+.hero-4-cont-1,
+.hero-4-cont-2,
+.hero-4-cont-3,
+.hero-4-cont-4,
+.hero-4-cont-5 {
+  width: 200px;
+  flex: 0 0 200px;
+}
 .hero-4-cont-1 p,
 .hero-4-cont-2 p,
 .hero-4-cont-3 p,
 .hero-4-cont-4 p,
 .hero-4-cont-5 p {
-  display: flex;
-  font-size: 14px;
+  font-size: 13px;
+  margin: 0 0 5px 8px;
+  text-align: left;
 }
 
 .hero-4-btn {
   display: flex;
+  margin-left: 8px;
 }
 
 .hero-4-btn button {
@@ -804,6 +814,7 @@ MOBILE RESPONSIVNE-1
   margin-bottom: 10px;
   color: #b05011;
   cursor: pointer;
+  margin-left: 8px;
 }
 
 .hero-4-icon {
@@ -818,38 +829,180 @@ MOBILE RESPONSIVNE-1
   cursor: pointer;
   margin-bottom: 10px;
   width: 200px;
+  height: 240px;
   transition: 0.8s;
+}
+.hero-4-cont-6 {
+  display: none;
 }
 
 .hero-4-cont-1 img:hover {
-  box-shadow: 0 0 10px 2px #2f2119;
-  transform: scale(1.1);
+  box-shadow: 0 0 10px 0 #2f2119;
+  transform: scale(1.01);
+  transform: translateY(-10px);
 }
 .hero-4-cont-2 img:hover {
-  box-shadow: 0 0 10px 2px #2f2119;
-  transform: scale(1.1);
+  box-shadow: 0 0 10px 0 #2f2119;
+  transform: scale(1.01);
+  transform: translateY(-10px);
 }
 .hero-4-cont-3 img:hover {
-  box-shadow: 0 0 10px 2px #2f2119;
-  transform: scale(1.1);
+  box-shadow: 0 0 10px 0 #2f2119;
+  transform: scale(1.01);
+  transform: translateY(-10px);
 }
 .hero-4-cont-4 img:hover {
-  box-shadow: 0 0 10px 2px #2f2119;
-  transform: scale(1.1);
+  box-shadow: 0 0 10px 0 #2f2119;
+  transform: scale(1.01);
+  transform: translateY(-10px);
 }
 .hero-4-cont-5 img:hover {
-  box-shadow: 0 0 10px 2px #2f2119;
+  box-shadow: 0 0 10px 0 #2f2119;
   transform: scale(1.01);
+  transform: translateY(-10px);
 }
-.hero-4-cont-5 img {
-  height: 240px;
+
+/* <!-------hero-4-f-btn------> */
+
+.hero-4-f-btn {
+  margin-top: 80px;
+}
+.hero-4-f-btn button {
+  padding: 13px 45px;
+  border: 1px solid #2f2119;
+  color: #fcfaf7;
+  background-color: #2f2119;
+  cursor: pointer;
+  font-family: "Poppins" sans-serif;
+  font-size: 16px;
   transition: 0.8s;
 }
 
-.hero-4-cont-5 img:hover {
-  transform: scale(1.1);
+.hero-4-f-btn button:hover {
+  background-color: #fcfaf7;
+  color: #2f2119;
 }
 
-.hero-4-cont-3 img {
-  height: 240px;
+/* <!-------Mobile Responsive - Hero 4-------> */
+
+@media (max-width: 600px) {
+  .hero-4 {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .hero-4 h1 {
+    font-size: 26px;
+  }
+
+  .hero-4-decoration {
+    width: 120px;
+    gap: 8px;
+  }
+
+  .hero-4-decoration i {
+    font-size: 16px;
+  }
+
+  /* <!-------Products Container-------> */
+
+  .hero-content {
+    width: 100%;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px 15px;
+    justify-content: center;
+  }
+
+  /* <!-------Product 1-6-------> */
+
+  .hero-4-cont-1,
+  .hero-4-cont-2,
+  .hero-4-cont-3,
+  .hero-4-cont-4,
+  .hero-4-cont-5,
+  .hero-4-cont-6 {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* <!-------Product 6-------> */
+
+  .hero-4-cont-6 {
+    display: block;
+  }
+
+  /* <!-------Product Images-------> */
+
+  .hero-4-cont-1 img,
+  .hero-4-cont-2 img,
+  .hero-4-cont-3 img,
+  .hero-4-cont-4 img,
+  .hero-4-cont-5 img,
+  .hero-4-cont-6 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 200 / 240;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: 0.8s;
+  }
+
+  /* <!-------Product Text-------> */
+
+  .hero-4-cont-1 p,
+  .hero-4-cont-2 p,
+  .hero-4-cont-3 p,
+  .hero-4-cont-4 p,
+  .hero-4-cont-5 p,
+  .hero-4-cont-6 p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 4px 0;
+    text-align: left;
+  }
+
+  /* <!-------Stars-------> */
+
+  .hero-4-cont-1 i,
+  .hero-4-cont-2 i,
+  .hero-4-cont-3 i,
+  .hero-4-cont-4 i,
+  .hero-4-cont-5 i,
+  .hero-4-cont-6 i {
+    font-size: 11px;
+    margin: 7px 2px 8px 0;
+    color: #b05011;
+  }
+
+  .hero-4-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  /* <!-------Add to Cart-------> */
+
+  .hero-4-btn {
+    margin-left: 0;
+  }
+
+  .hero-4-btn button {
+    padding: 7px 12px;
+    font-size: 11px;
+  }
+
+  /* <!-------View All Products-------> */
+
+  .hero-4-f-btn {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .hero-4-f-btn button {
+    padding: 11px 28px;
+    font-size: 13px;
+  }
 }
